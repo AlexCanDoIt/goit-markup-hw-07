@@ -11,38 +11,56 @@
 </head>
 
 <body>
-  <!--Header-->
+  <!-- Header -->
   <header class="header">
     <div class="conteiner">
-      <nav class="navigation">
+      <!-- class="navigation" -->
+      <nav class="header__navigation">
         <a class="link logo" href="./index.html" aria-label="логотип веб-студии" lang="en">
-        Web<span>Studio</span>
+        Web
+        <!-- class=" " -->
+        <span class="header__logo">Studio</span>
         </a>
-        <ul class="list navigation-list">
-          <li class="navigation-list-item">
-            <a class="link navigation-list-link active" href="./index.html">Студия</a>
+        <!-- class="list navigation-list" -->
+        <ul class="list navigation">
+          <!-- class="navigation-list-item" -->
+          <li class="navigation__item">
+            <!-- class="link navigation-list-link active" -->
+            <a class="link navigation__link navigation__link--active" href="./index.html">Студия</a>
           </li>
-          <li class="navigation-list-item">
-            <a class="link navigation-list-link" href="./portfolio.html">Портфолио</a>
+          <!-- class="navigation-list-item" -->
+          <li class="navigation__item">
+            <!-- class="link navigation-list-link" -->
+            <a class="link navigation__link" href="./portfolio.html">Портфолио</a>
           </li>
-          <li class="navigation-list-item">
-            <a class="link navigation-list-link" href="#contacts">Контакты</a>
+          <!-- class="navigation-list-item" -->
+          <li class="navigation__item">
+            <!-- class="link navigation-list-link" -->
+            <a class="link navigation__link" href="#contacts">Контакты</a>
           </li>
         </ul>
       </nav>
-      <address class="address">
-        <ul class="list header-address-list">
-          <li class="header-address-list-item">
-            <a class="link header-address-list-mail" href="mailto:info@devstudio.com" lang="en">
-              <svg class="icon" width="16" height="12">
+      <!-- class="address" -->
+      <address class="header-address">
+        <!-- class="list header-address-list" -->
+        <ul class="list header-address__list">
+          <!-- class="header-address-list-item" -->
+          <li class="header-address__item">
+            <!-- class="link header-address-list-mail" -->
+            <a class="link header-address__link" href="mailto:info@devstudio.com" lang="en">
+              <!-- class="icon" -->
+              <svg class="header-address__icon" width="16" height="12">
                 <use href="./images/sprite.svg#icon-envelope"></use>
               </svg>
               info@devstudio.com
             </a>
           </li>
-          <li class="header-address-list-item">
-            <a class="link header-address-list-tel" href="tel:+380961111111">
-              <svg class="icon" width="10" height="16">
+          <!-- class="header-address-list-item" -->
+          <li class="header-address__item">
+            <!-- class="link header-address-list-tel" -->
+            <a class="link header-address__link" href="tel:+380961111111">
+              <!-- class="icon" -->
+              <svg class="header-address__icon" width="10" height="16">
                 <use href="./images/sprite.svg#icon-smartphone"></use>
               </svg>
               +38 096 111 11 11
@@ -53,64 +71,66 @@
     </div>
   </header>
   <main>
-    <!--Hero Section-->
+    <!-- Hero Section -->
     <section class="hero">
       <div class="conteiner">
-        <h1 class="hero-title">Эффективные решения для вашего бизнеса</h1>
-        <button class="hero-btn" type="button" data-modal-open>Заказать услугу</button>
+        <!-- class="hero-title" -->
+        <h1 class="hero__title">Эффективные решения для вашего бизнеса</h1>
+        <!-- class="hero-btn" -->
+        <button class="hero__btn" type="button" data-modal-open>Заказать услугу</button>
       </div>
     </section>
-    <!--Benefits Section-->
+    <!-- Benefits Section -->
     <section class="section benefits">
       <div class="conteiner">
-        <h2 class="visually-hidden benefits-title">Наши преимущества</h2>
-        <ul class="list benefits-list">
-          <li class="benefits-list-item">
-            <h3 class="benefits-list-title">Внимание к деталям</h3>
-            <p class="benefits-list-text">Идейные соображения, а также начало повседневной работы по формированию позиции.</p>
+        <h2 class="visually-hidden">Наши преимущества</h2>
+        <ul class="list benefits__list">
+          <li class="benefits__item">
+            <h3 class="benefits__title">Внимание к деталям</h3>
+            <p class="benefits__text">Идейные соображения, а также начало повседневной работы по формированию позиции.</p>
           </li>
-          <li class="benefits-list-item">
-            <h3 class="benefits-list-title">Пунктуальность</h3>
-            <p class="benefits-list-text">Задача организации, в особенности же рамки и место обучения кадров влечет за собой.</p>
+          <li class="benefits__item">
+            <h3 class="benefits__title">Пунктуальность</h3>
+            <p class="benefits__text">Задача организации, в особенности же рамки и место обучения кадров влечет за собой.</p>
           </li>
-          <li class="benefits-list-item">
-            <h3 class="benefits-list-title">Планирование</h3>
-            <p class="benefits-list-text">Равным образом консультация с широким активом в значительной степени обуславливает.</p>
+          <li class="benefits__item">
+            <h3 class="benefits__title">Планирование</h3>
+            <p class="benefits__text">Равным образом консультация с широким активом в значительной степени обуславливает.</p>
           </li>
-          <li class="benefits-list-item">
-            <h3 class="benefits-list-title">Современные технологии</h3>
-            <p class="benefits-list-text">Значимость этих проблем настолько очевидна, что реализация плановых заданий.</p>
+          <li class="benefits__item">
+            <h3 class="benefits__title">Современные технологии</h3>
+            <p class="benefits__text">Значимость этих проблем настолько очевидна, что реализация плановых заданий.</p>
           </li>
         </ul>
       </div>
     </section>
-    <!--About Us Section-->
+    <!-- About Us Section -->
     <section class="section about">
       <div class="conteiner">
-        <h2 class="title about-title">Чем мы занимаемся</h2>
-      <ul class="list about-list">
-        <li class="about-list-item">
-          <img class="img about-list-img" src="./images/main/index/about-us-1.jpg" alt="Разработчик работает в поте лица">
-          <p class="about-list-text">Десктопные приложения</p>
+        <h2 class="title about__title">Чем мы занимаемся</h2>
+      <ul class="list about__list">
+        <li class="about__item">
+          <img class="img about__img" src="./images/main/index/about-us-1.jpg" alt="Разработчик работает в поте лица">
+          <p class="about__text">Десктопные приложения</p>
         </li>
-        <li class="about-list-item">
-          <img class="img about-list-img" src="./images/main/index/about-us-2.jpg" alt="Разработчик работает в поте лица">
-          <p class="about-list-text">Мобильные приложения</p>
+        <li class="about__item">
+          <img class="img about__img" src="./images/main/index/about-us-2.jpg" alt="Разработчик работает в поте лица">
+          <p class="about__text">Мобильные приложения</p>
         </li>
-        <li class="about-list-item">
-          <img class="img about-list-img" src="./images/main/index/about-us-3.jpg" alt="Разработчик работает в поте лица">
-          <p class="about-list-text">Дизайнерские решения</p>
+        <li class="about__item">
+          <img class="img about__img" src="./images/main/index/about-us-3.jpg" alt="Разработчик работает в поте лица">
+          <p class="about__text">Дизайнерские решения</p>
         </li>
       </ul>
       </div>
     </section>
-    <!--Our Team Section-->
+    <!-- Our Team Section -->
     <section class="section team">
       <div class="conteiner">
-        <h2 class="title team-title">Наша команда</h2>
-        <ul class="list team-list">
-          <li class="team-list-item">
-            <img class="img team-list-img" src="./images/main/index/our-team-1.jpg" alt="фото сотрудника Игорь Демьяненко">
+        <h2 class="title team__title">Наша команда</h2>
+        <ul class="list team__list">
+          <li class="team__item">
+            <img class="img team__img" src="./images/main/index/our-team-1.jpg" alt="фото сотрудника Игорь Демьяненко">
             <div class="team-list-content">
               <h3 class="team-list-name">Игорь Демьяненко</h3>
               <p class="team-list-position" lang="en">Product Designer</p>
