@@ -220,18 +220,16 @@ body {
   color: var(--title-dark-theme-color);
 }
 
-.hero__btn {
-  display: inline-block;
-  min-width: 200px;
+.button {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 200px;
   height: 50px;
-  padding-top: 10px;
-  padding-right: 32px;
-  padding-bottom: 10px;
-  padding-left: 32px;
   border: none;
   border-radius: 4px;
-  background-color: var(--accent-color);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  background-color: var(--accent-color);
   cursor: pointer;
 
   font-family: var(--main-font);
@@ -768,7 +766,7 @@ body {
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.modal-close-btn {
+.close-button {
   position: absolute;
   top: 8px;
   right: 8px;
@@ -780,14 +778,14 @@ body {
   height: 30px;
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 50%;
-  cursor: pointer;
   background-color: #FFFFFF;
+  cursor: pointer;
 
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1), border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.modal-close-btn:hover,
-.modal-close-btn:focus {
+.close-button:hover,
+.close-button:focus {
   fill: var(--accent-color);
   border-color: var(--accent-color);
   outline: none;
@@ -798,13 +796,12 @@ body {
   flex-direction: column;
 }
 
-.form-title {
+.form__title {
   display: block;
-  margin-bottom: 30px;
   text-align: center;
+  margin-bottom: 30px;
 
   font-family: var(--main-font);
-  font-style: normal;
   font-weight: 700;
   font-size: 20px;
   line-height: 1.15;
@@ -812,12 +809,11 @@ body {
   color: var(--title-white-theme-color);
 }
 
-.label {
+.form__label {
   position: relative;
   margin-bottom: 28px;
 
   font-family: var(--main-font);
-  font-style: normal;
   font-weight: 400;
   font-size: 12px;
   line-height: 1.166;
@@ -825,11 +821,11 @@ body {
   color: var(--text-white-theme-color);
 }
 
-.label:nth-child(5) {
+.form__label:nth-child(5) {
   margin-bottom: 20px;
 }
 
-.label-text {
+.form__subtitle {
   position: absolute;
   top: 13px;
   left: 42px;
@@ -837,7 +833,7 @@ body {
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.label-text-comment {
+.form__subtitle-comment {
   position: absolute;
   top: 13px;
   left: 16px;
@@ -845,33 +841,33 @@ body {
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1) 250ms;
 }
 
-.form-input-comment::placeholder {
+.form__input-comment::placeholder {
   opacity: 0;
 }
 
-.input:focus ~ .label-text {
+.form__input:focus ~ .form__subtitle {
   transform: translate(-42px, -30px);
 }
 
-.input:focus ~ .label-text-comment {
+.form__input:focus ~ .form__subtitle-comment {
   transform: translate(-16px, -30px);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.form-input-comment:focus::placeholder {
+.form__input-comment:focus::placeholder {
   opacity: 1;
   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1) 250ms;
 }
 
-.input:not(:placeholder-shown) ~ .label-text{
+.form__input:not(:placeholder-shown) ~ .form__subtitle{
   transform: translate(-42px, -30px);
 }
 
-.input:not(:placeholder-shown) ~ .label-text-comment{
+.form__input:not(:placeholder-shown) ~ .form__subtitle-comment{
   transform: translate(-16px, -30px);
 }
 
-.input {
+.form__input {
   width: 100%;
   height: 40px;
   padding-left: 42px;
@@ -881,7 +877,7 @@ body {
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.form-icon {
+.form__icon {
   position: absolute;
   left: 12px;
   bottom: 11px;
@@ -889,16 +885,16 @@ body {
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.input:focus {
+.form__input:focus {
   border-color: var(--accent-color);
   outline: none;
 }
 
-.input:focus ~ .form-icon {
+.form__input:focus ~ .form__icon {
   fill: var(--accent-color);
 }
 
-.form-input-comment {
+.form__input-comment {
   resize: none;
   width: 448px;
   height: 120px;
@@ -907,11 +903,11 @@ body {
   border-radius: 4px;
 }
 
-form::placeholder {
+.form::placeholder {
   color: rgba(117, 117, 117, 0.5);
 }
 
-.form-label-policy {
+.form__label-policy {
   position: relative;
   display: inline-block;
   padding-left: 36px;
@@ -926,11 +922,11 @@ form::placeholder {
   color: var(--text-white-theme-color);
 }
 
-.form-label-policy > a {
+.form__label-policy > a {
   color: var(--accent-color);
 }
 
-.form-icon-policy {
+.form__icon-policy {
   position: absolute;
   top: 50%;
   left: 12px;
@@ -946,32 +942,14 @@ form::placeholder {
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.form-input-policy:checked + .form-icon-policy {
+.form__input-policy:checked + .form__icon-policy {
   border-color: transparent;
   background-color: var(--accent-color);
   background-image: url("../images/main/index/modal/icon-modal-ok.svg");
   background-origin: border-box;
 }
 
-.form-submit-btn {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 200px;
-  height: 50px;
+.form__submit-button {
   margin: 0 auto;
-  border: none;
-  border-radius: 4px;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  background-color: var(--accent-color);
-  cursor: pointer;
-
-  font-family: var(--main-font);
-  font-style: normal;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 1.875;
-  letter-spacing: 0.06em;
-  color: var(--title-dark-theme-color);
 }
 /* ========== End Modal ========== */

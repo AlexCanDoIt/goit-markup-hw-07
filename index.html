@@ -57,7 +57,7 @@
     <section class="hero">
       <div class="conteiner hero__conteiner">
         <h1 class="hero__title">Эффективные решения для вашего бизнеса</h1>
-        <button class="hero__btn" type="button" data-modal-open>Заказать услугу</button>
+        <button class="button" type="button" data-modal-open>Заказать услугу</button>
       </div>
     </section>
     <!-- Benefits Section -->
@@ -377,44 +377,44 @@
   <!-- Backdrop And Modal -->
   <div class="is-hidden backdrop" data-modal>
     <div class="modal">
-      <button class="modal-close-btn" type="button" data-modal-close>
-        <svg class="modal-close-icon" width="11" height="11">
+      <button class="close-button" type="button" data-modal-close>
+        <svg class="close-button__icon" width="11" height="11">
           <use href="./images/sprite.svg#icon-form-close-btn"></use>
         </svg>
       </button>
       <form class="form js-speaker-form">
-        <b class="form-title">Оставьте свои данные, мы вам перезвоним</b>
-        <label class="label form-label-name">
-          <input class="input form-input-name" type="text" name="name" placeholder=" " autofocus>
-          <span class="label-text">Имя</span>
-          <svg class="form-icon" width="18" height="18">
+        <b class="form__title">Оставьте свои данные, мы вам перезвоним</b>
+        <label class="form__label">
+          <input class="form__input" type="text" name="name" placeholder=" " autofocus>
+          <span class="form__subtitle">Имя</span>
+          <svg class="form__icon" width="18" height="18">
             <use href="./images/sprite.svg#icon-form-name"></use>
           </svg>
         </label>
-        <label class="label form-label-tel">
-          <input class="input form-input-tel" type="tel" name="tel" placeholder=" ">
-          <span class="label-text">Телефон</span>
-          <svg class="form-icon" width="18" height="18">
+        <label class="form__label">
+          <input class="form__input" type="tel" name="tel" placeholder=" ">
+          <span class="form__subtitle">Телефон</span>
+          <svg class="form__icon" width="18" height="18">
             <use href="./images/sprite.svg#icon-form-phone"></use>
           </svg>
         </label>
-        <label class="label form-label-mail">
-          <input class="input form-input-mail" type="email" name="mail" placeholder=" ">
-          <span class="label-text">Почта</span>
-          <svg class="form-icon" width="18" height="18">
+        <label class="form__label">
+          <input class="form__input" type="email" name="mail" placeholder=" ">
+          <span class="form__subtitle">Почта</span>
+          <svg class="form__icon" width="18" height="18">
             <use href="./images/sprite.svg#icon-form-email"></use>
           </svg>
         </label>
-        <label class="label form-label-comment">
-          <textarea class="input form-input-comment" name="comment" placeholder="Введите текст"></textarea>
-          <span class="label-text-comment">Комментарий</span>
+        <label class=" form__label form__label-comment">
+          <textarea class="form__input form__input-comment" name="comment" placeholder="Введите текст"></textarea>
+          <span class="form__subtitle-comment">Комментарий</span>
         </label>
-        <label class="form-label-policy">
-          <input class="visually-hidden form-input-policy" type="checkbox" name="policy" value="accept-policy">
-          <span class="form-icon-policy"></span>
+        <label class="form__label-policy">
+          <input class="visually-hidden form__input-policy" type="checkbox" name="policy" value="accept-policy">
+          <span class="form__icon-policy"></span>
           Соглашаюсь с рассылкой и принимаю <a href="">Условия договора</a>
         </label>
-        <button class="form-submit-btn" type="submit">Оставить</button>
+        <button class="button form__submit-button" type="submit">Оставить</button>
       </form>
     </div>
   </div>
