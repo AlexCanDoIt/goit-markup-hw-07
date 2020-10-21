@@ -626,17 +626,16 @@ body {
   color: var(--accent-color);
 }
 
-.footer-icon-conteiner {
+.footer-social {
   width: 206px;
   margin-right: 92px;
 }
 
-.footer-icon-title {
+.footer__title {
   display: block;
   margin-bottom: 20px;
 
   font-family: var(--main-font);
-  font-style: normal;
   font-weight: 700;
   font-size: 14px;
   line-height: 1.143;
@@ -645,49 +644,33 @@ body {
   color: var(--title-dark-theme-color);
 }
 
-.footer-icon-list {
-  display: flex;
-  justify-content: space-between;
-}
-
-.footer-icon-list-link {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 44px;
-  height: 44px;
+.footer-social__link {
   background-color: rgba(255, 255, 255, 0.1);
-  border-radius: 50%;
   fill: var(--title-dark-theme-color);
 
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.footer-icon-list-link:hover,
-.footer-icon-list-link:focus {
-  background-color: var(--accent-color);
-}
-
-.footer-form-title {
-  display: block;
-  margin-bottom: 20px;
-
-  font-family: var(--main-font);
-  font-style: normal;
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.143;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
-  color: var(--title-dark-theme-color);
-}
-
-.footer-form-element {
+.footer-form__elements {
   position: relative;
   display: flex;
 }
 
-.footer-form-mail {
+.footer-form__elements::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: 25px;
+
+  width: 24px;
+  height: 24px;
+  background-image: url(../images/footer/icon-send.svg);
+  pointer-events: none;
+
+  transform: translate(0, -50%);
+}
+
+.footer-form__input {
   width: 358px;
   height: 50px;
   padding-left: 15px;
@@ -700,12 +683,12 @@ body {
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.footer-form-mail:focus {
+.footer-form__input:focus {
   border-color: var(--accent-color);
   outline: none;
 }
 
-.footer-form-mail::placeholder {
+.footer-form__input::placeholder {
   font-family: var(--main-font);
   font-style: normal;
   font-weight: 400;
@@ -717,11 +700,11 @@ body {
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.footer-form-mail:focus::placeholder {
+.footer-form__input:focus::placeholder {
   color: rgba(255, 255, 255, 0.8);
 }
 
-.footer-form-btn {
+.footer-form__btn {
   text-align: left;
   width: 200px;
   height: 50px;
@@ -735,25 +718,11 @@ body {
   cursor: pointer;
 
   font-family: var(--main-font);
-  font-style: normal;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.875;
   letter-spacing: 0.06em;
   color: var(--title-dark-theme-color);
-}
-
-.footer-form-element::after {
-  content: "";
-  position: absolute;
-  top: 50%;
-  right: 25px;
-
-  width: 24px;
-  height: 24px;
-  background-image: url(../images/footer/icon-send.svg);
-  transform: translate(0, -50%);
-  pointer-events: none;
 }
 /* ========== End Footer ========== */
 
@@ -762,9 +731,11 @@ body {
   position: fixed;
   top: 0;
   left: 0;
+
   width: 100%;
   height: 100%;
   background-color: rgba(0, 0, 0, 0.2);
+  
   opacity: 1;
   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
