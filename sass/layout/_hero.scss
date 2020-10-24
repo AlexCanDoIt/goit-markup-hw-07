@@ -6,20 +6,19 @@
   background-repeat: no-repeat;
   background-position: center center;
   background-size: 1600px 600px;
-}
 
-.hero__conteiner {
-  padding-right: 252px;
-  padding-left: 252px;
-}
+  &__conteiner {
+    padding-right: 252px;
+    padding-left: 252px;
+  }
 
-.hero__title {
-  margin-bottom: 30px;
-
-  font-weight: 900;
-  font-size: 44px;
-  line-height: 1.364;
-  letter-spacing: 0.06em;
-  text-transform: uppercase;
-  color: $title-dark-theme-color;
+  &__title {
+    margin-bottom: 30px;
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.364;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: $title-dark-theme-color;
+  }
 }

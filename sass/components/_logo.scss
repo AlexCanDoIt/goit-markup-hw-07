@@ -5,21 +5,12 @@
   line-height: 1.192;
   letter-spacing: 0.03em;
   color: $accent-color;
-}
 
-.header__logo {
-  margin-right: 92px;
-}
+  &--dark {
+    color: #000000;
+  }
 
-.logo--dark {
-  color: #000000;
-}
-
-.footer__logo {
-  display: block;
-  margin-bottom: 20px;
-}
-
-.logo--white {
-  color: #ffffff;
+  &--white {
+    color: #ffffff;
+  }
 }
