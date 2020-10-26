@@ -918,6 +918,10 @@ body {
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+.form__input-policy:focus ~ .form__icon-policy {
+  border-color: #2196F3;
+}
+
 .form__input-policy:checked ~ .form__icon-policy {
   border-color: transparent;
   background-color: #2196F3;
